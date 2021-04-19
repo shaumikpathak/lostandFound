@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <meta name="google-signin-client_id" content="342436994729-djb57j0roqgb9fhm1g8vcft7g88nicj9.apps.googleusercontent.com"> -->
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <title>UCD Lost and Found</title>
+
+    <!-- import the webpage's stylesheet >
+    <link rel="stylesheet" href="/user/reset.css">
+    <link rel="stylesheet" href="/user/style.css"-->
+
+    <!-- import the webpage's javascript file -->
+    <script src="user/script.js" defer></script>
+
+    <style>
+      svg {
+        width: 1em;
+        height: 1em;
+      }
+      svg [data-fill="1"] {
+        fill: rgb(219, 68, 55);
+      }
+      svg [data-fill="2"] {
+        fill: rgb(244, 180, 0);
+      }
+      svg [data-fill="3"] {
+        fill: rgb(15, 157, 88);
+      }
+      svg [data-fill="4"] {
+        fill: rgb(66, 133, 244);
+      }
+      .googleSignin {
+        background: white;
+        cursor: pointer;
+        border-radius: 9999px;
+        border: 1px solid rgb(177, 172, 163);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1em 2em 1em 2em;
+        transition: 0.3s;
+        color: #142a50;
+        font-family: Arial;
+      }
+
+      .googleSignin:hover {
+        background: #b3c1d1;
+      }
+      .mainPage {
+        display: flex;
+        flex-direction: row;
+      }
+      .mainLogin {
+        width: 700px;
+        height: 800px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .mainImage img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .UCDLogo img {
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 350px;
+      }
+      a {
+        margin-left: 10px;
+      }
+
+      /* small screens index css*/
+      @media screen and (max-width: 480px) {
+        .mainPage {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        .mainLogin {
+          width: 100%;
+          height: 100%;
+          justify-content: center;
+          align-items: center;
+        }
+        .UCDLogo img {
+          padding-left: 10px;
+          padding-right: 10px;
+          width: 190px;
+        }
+        .UCDLogo {
+          padding-top: 30px;
+        }
+        .g-signin2 {
+          padding-top: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body style="background:#365c85">
+    <div class="mainPage">
+      <div class="mainImage">
+        <img
+          src="https://cdn.glitch.com/9001d8bd-1bd8-4717-821c-3de4bd0ddeab%2FShields-entrance_Credit-Hector-Villicana_1924x1282-960x600-c-center.jpg?v=1590009733205"
+        />
+      </div>
+
+      <div class="mainLogin">
+        <div class="UCDLogo">
+          <img
+            src="https://cdn.glitch.com/9001d8bd-1bd8-4717-821c-3de4bd0ddeab%2FLogo.png?v=1590009732448"
+          />
+        </div>
+        <!--
+        <div class="g-signin2" data-onsucess="onSignIn" onclick ="nextPage()" >
+        
+        </div>
+        -->
+        <div
+          class="googleSignin"
+          onclick="window.location.href = '/auth/google';"
+        >
+          <svg viewbox="0 0 24 24">
+            <path
+              d="M12.2 5.867c1.878 0 3.145.81 3.867 1.489L18.889 4.6C17.156 2.989 14.9 2 12.2 2a9.993 9.993 0 00-8.933 5.511L6.5 10.022c.811-2.41 3.056-4.155 5.7-4.155z"
+              data-fill="1"
+              fill-rule="evenodd"
+            ></path>
+            <path
+              d="M6.511 13.978A6.157 6.157 0 016.178 12c0-.689.122-1.355.322-1.978l-3.233-2.51A10.009 10.009 0 002.2 12c0 1.611.389 3.133 1.067 4.49l3.244-2.512z"
+              data-fill="2"
+              fill-rule="evenodd"
+            ></path>
+            <path
+              d="M12.2 22c2.7 0 4.967-.889 6.622-2.422l-3.155-2.445c-.845.589-1.978 1-3.467 1-2.644 0-4.889-1.744-5.689-4.155l-3.233 2.51C4.922 19.756 8.289 22 12.2 22z"
+              data-fill="3"
+              fill-rule="evenodd"
+            ></path>
+            <path
+              d="M21.8 12.222c0-.822-.066-1.422-.21-2.044H12.2v3.71h5.511c-.11.923-.71 2.312-2.044 3.245l3.155 2.445c1.89-1.745 2.978-4.311 2.978-7.356z"
+              data-fill="4"
+              fill-rule="evenodd"
+            ></path>
+          </svg>
+          <a>Sign in with Google</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js" defer></script>
+  </body>
+</html>

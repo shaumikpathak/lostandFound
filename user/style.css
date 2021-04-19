@@ -1,0 +1,517 @@
+/* CSS files add styling rules to your content */
+
+body {
+  font-family: helvetica, arial, sans-serif;
+}
+
+.g-signin2 {
+  padding-top: 50px;
+}
+.collapsible1 {
+  background-color: #b3c1d1;
+  color: #142a50;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  font-family: Montserrat;
+}
+
+.active,
+.collapsible1:hover {
+  background-color: #b3c1d1;
+}
+
+.collapsible1:after {
+  content: "More";
+  font-size: 13px;
+  color: #142a50;
+  float: right;
+  margin-left: 5px;
+}
+.collapsible2:after {
+  content: "More";
+  font-size: 13px;
+  color: #142a50;
+  float: right;
+  margin-left: 5px;
+}
+.active:after {
+  content: "Less"; /* Unicode character for "minus" sign (-) */
+}
+.collapsible2 {
+  background-color: #feebb1;
+  color: #365c85;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  font-family: Montserrat;
+}
+
+.active,
+.collapsible2:hover {
+  background-color: #feebb1;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+/* small screens index css*/
+@media screen and (max-width: 480px) {
+  .mainPage {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .mainLogin {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .UCDLogo img {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 190px;
+  }
+  .UCDLogo {
+    padding-top: 30px;
+  }
+  .g-signin2 {
+    padding-top: 20px;
+  }
+}
+
+/*-v not main page v */
+.LSpage {
+  background: #b3c1d1;
+  width: 100%;
+  height: 100%;
+}
+.logoDavis {
+  text-align: right;
+}
+.logoDavis img {
+  width: 180px;
+  height: 70px;
+  margin-right: 10px;
+}
+/*   */
+
+.findLost {
+  display: flex;
+  direction-flex: row;
+  text-align: center;
+  padding-top: 250px;
+}
+.findSth {
+  text-align: center;
+  width: 400px;
+  margin: auto;
+}
+.searchSth {
+  text-align: center;
+  margin: auto;
+}
+p.question {
+  font-family: Montserrat;
+  font-size: 25px;
+  font-weight: bold;
+  color: #142a50;
+}
+.button {
+  border: none;
+  padding: 16px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+#cardImg {
+  max-width: 100%;
+  max-height: 100%;
+  display: none;
+}
+.imageBton {
+  margin-top: 6px;
+  background-color: #e5e5e5;
+  border: none;
+  padding: 8px 8px;
+  font-size: 15px;
+}
+
+.findBtn {
+  background-color: #142a50;
+  color: white;
+  font-family: Montserrat;
+  border-radius: 10px;
+}
+.findBtn:hover {
+  background-color: #daab27;
+}
+.searchBtn {
+  background-color: #142a50;
+  color: white;
+  font-family: Montserrat;
+  border-radius: 10px;
+}
+.searchBtn:hover {
+  background-color: #daab27;
+}
+
+/* screen 3 css part*/
+.formInfo {
+  background-color: white;
+  margin: auto;
+  width: 500px;
+  height: 480px;
+  display: inline-block;
+}
+
+.formSearchItem {
+  padding-top: 20px;
+  padding-left: 30px;
+}
+.mainScreen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.titleForm {
+  padding-top: 30px;
+  text-align: left;
+  padding-right: 220px;
+  font-family: Montserrat;
+  font-size: 25px;
+  color: #142a50;
+}
+.screenForm {
+  padding-top: 10px;
+  margin: auto;
+}
+label {
+  color: #142a50;
+  font-size: 20px;
+  padding-bottom: 30px;
+}
+
+input {
+  background-color: #e5e5e5;
+  border: none;
+  padding: 6px 5px;
+  margin: 8px 0;
+  width: 91%;
+}
+.imgArea {
+  width: 30px;
+}
+input[type="file"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.Imgtxt {
+  position: absolute;
+  padding: 7px 7px 7px 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e5e5e5;
+  border: none;
+}
+
+.foundImage {
+  background-color: #e5e5e5;
+  border: none;
+  padding: 6px 5px;
+  width: 40%;
+}
+.searchRequest {
+  padding-top: 10px;
+  margin: auto;
+}
+#search {
+  background-color: white;
+  width: 90%;
+  background-image: url("https://cdn.glitch.com/9001d8bd-1bd8-4717-821c-3de4bd0ddeab%2Fsearch-solid.svg?v=1590009731569");
+  background-position: 400px 1px;
+  position: right;
+  background-size: 35px;
+  background-repeat: no-repeat;
+  padding: 12px 15px 20px 40px;
+  font-size: 16px;
+}
+#searchbox {
+  background-color: white;
+  width: 90%;
+  background-image: url("https://cdn.glitch.com/9001d8bd-1bd8-4717-821c-3de4bd0ddeab%2Fsearch-solid.svg?v=1590009731569");
+  background-position: 400px 1px;
+  position: right;
+  background-size: 30px;
+  background-repeat: no-repeat;
+  padding: 12px 15px 20px 40px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.question {
+  color: #142a50;
+}
+.description {
+  margin-top: 10px;
+  width: 95%;
+  height: 100px;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  background-color: #e5e5e5;
+  font-size: 14px;
+  resize: none;
+}
+.buttonNext {
+  border: none;
+  padding: 8px 12px;
+  text-align: center;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.nextBton {
+  margin-left: 380px;
+  background-color: #142a50;
+  color: white;
+  font-family: Montserrat;
+  border-radius: 10px;
+}
+.nextBton:hover {
+  background-color: #daab27;
+}
+/* End screen3.html */
+
+/* Screen4.html*/
+.datmInput {
+  display: flex;
+  flex-direction: row;
+}
+#date {
+  width: 40%;
+  margin-right: 10px;
+}
+#date2 {
+  width: 40%;
+  margin-right: 10px;
+}
+#time {
+  width: 20%;
+}
+
+.buttonSubmit {
+  border: none;
+  padding: 8px 12px;
+  text-align: center;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.submBton {
+  margin-left: 360px;
+  background-color: #142a50;
+  color: white;
+  font-family: Montserrat;
+  border-radius: 10px;
+}
+.submBton:hover {
+  background-color: #daab27;
+}
+/* End of Screen 4*/
+
+/* Screen 5*/
+#datefr {
+  width: 15%;
+  margin-right: 10px;
+}
+#timefr {
+  width: 20%;
+}
+#dateto {
+  width: 15%;
+  margin-right: 10px;
+}
+#timeto {
+  width: 20%;
+}
+.centerto {
+  padding-top: 12px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.buttonSearch {
+  border: none;
+  padding: 8px 12px;
+  text-align: center;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.srchBton {
+  margin-left: 360px;
+  background-color: #142a50;
+  color: white;
+  font-family: Montserrat;
+  border-radius: 10px;
+}
+.srchBton:hover {
+  background-color: #daab27;
+}
+.showingResult {
+  width: 600px;
+  height: 800px;
+  margin: auto;
+}
+.titleSc9 {
+  font-family: Montserrat;
+  color: #142a50;
+  font-size: 30px;
+}
+.resultShow {
+  width: 500px;
+}
+.resultTitle {
+  display: flex;
+  direction-flex: row;
+}
+#editSrch {
+  background-color: #142a50;
+  color: white;
+  font-family: Montserrat;
+  padding: 5px 5px 5px 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+}
+#editSrch:hover {
+  background-color: #daab27;
+}
+
+/* med screen screen3.. css*/
+@media screen and (max-width: 600px) {
+  .formInfo {
+    background-color: white;
+    margin: auto;
+    width: 400px;
+    height: 450px;
+    display: inline-block;
+  }
+  .titleForm {
+    text-align: left;
+    padding-right: 150px;
+    font-size: 22px;
+  }
+  .nextBton {
+    margin-left: 200px;
+    margin-top: 50px;
+    border-radius: 10px;
+  }
+  #search {
+    width: 86%;
+    background-image: url("https://cdn.glitch.com/9001d8bd-1bd8-4717-821c-3de4bd0ddeab%2Fsearch-solid.svg?v=1590009731569");
+    background-position: 300px 1px;
+    background-repeat: no-repeat;
+    padding: 12px 15px 12px 40px;
+  }
+  
+  .mapofGoogle{
+    width: 400px;
+    height: 450px;
+  }
+  #googleMap{
+    width: 400px;
+    height: 450px;
+  }
+}
+
+/* small screens screen3.. css*/
+@media screen and (max-width: 390px) {
+  .formInfo {
+    width: 300px;
+  }
+  .titleForm {
+    text-align: left;
+    padding-right: 10px;
+    font-size: 18px;
+  }
+  .nextBton {
+    margin-left: 20px;
+    margin-top: 50px;
+    border-radius: 10px;
+  }
+
+  #search {
+    width: 79%;
+    background-image: url("https://cdn.glitch.com/9001d8bd-1bd8-4717-821c-3de4bd0ddeab%2Fsearch-solid.svg?v=1590009731569");
+    background-position: 267px 1px;
+    background-repeat: no-repeat;
+    padding: 1px 12px 12px 30px;
+  }
+  #googleMap{
+    width:50%;
+    height:50%
+  }
+}
+
+/* small screens mainpage css*/
+@media screen and (max-width: 480px) {
+  .findLost {
+    display: flex;
+    padding-top: 90px;
+    flex-direction: column;
+  }
+  .findSth {
+    padding-top: -300px;
+    text-align: left;
+    width: 350px;
+    padding-left: 36px;
+  }
+  p.question {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 36px;
+  }
+
+  .findBtn {
+    width: 200px;
+  }
+
+  .searchSth {
+    padding-top: 120px;
+    width: 350px;
+    text-align: left;
+    padding-left: 36px;
+  }
+  .searchBtn {
+    width: 200px;
+  }
+  #googleMap{
+    width:40%;
+    height:40%
+  }
+}

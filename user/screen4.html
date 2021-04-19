@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>UCD Lost and Found</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/user/reset.css" />
+    <link rel="stylesheet" href="/user/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/user/script.js" defer></script>
+  </head>
+  <body style="background:#feebb1">
+    <div class="logoDavis">
+      <img
+        src="https://cdn.glitch.com/9001d8bd-1bd8-4717-821c-3de4bd0ddeab%2FLogo.png?v=1590009732448"
+      />
+    </div>
+    <div class="mainScreen">
+      <p class="titleForm">Input the found item</p>
+      <div class="screenForm">
+        <div class="formInfo">
+          <form class="formSearchItem">
+            <label for="datetime" style="color:#365c85">Date & Time</label
+            ><br />
+            <div class="datmInput">
+              <input type="date" id="date" name="date" />
+              <input type="time" id="time" name="time" />
+            </div>
+
+            <label for="location" style="color:#365c85">Location</label><br />
+            <input type="text" id="location" name="location" /><br />
+            <div style="background:#fff;width:430px;height:220px;" class="mapofGoogle">
+              <div id="googleMap" style="width:100%;height:100%;"></div>
+            </div>
+            <a
+              href="https://final-loving-guava.glitch.me/user/screen9.html"
+              class="buttonSubmit submBton"
+              id="submit"
+              >Submit</a
+            >
+          </form>
+        </div>
+        <div class="searchRequest">
+          <p class="question">Or search for existing requests</p>
+          <br />
+          <!-- <input type="text" id="search" name="search" class="search"> -->
+          <div
+            id="searchbox"
+            onclick="window.location='https://final-loving-guava.glitch.me/user/screen5.html'"
+          ></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js" defer></script>
+  </body>
+</html>

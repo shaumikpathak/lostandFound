@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body style="font-family: 'Roboto', sans-serif; background:#365c85;">
+    <div class="logoDavis">
+      <img
+        src="https://cdn.glitch.com/9001d8bd-1bd8-4717-821c-3de4bd0ddeab%2FLogo.png?v=1590009732448"
+      />
+    </div>
+    <p
+      style="display: flex; justify-content: center; align-items: center; height: 500px;"
+    >
+      Please sign in first. Redirecting to main page &nbsp<span
+        id="countdown"
+      ></span>
+    </p>
+    <script>
+      document.getElementById("countdown").textContent = 3;
+      setInterval(() => {
+        if (parseInt(document.getElementById("countdown").textContent) <= 0) {
+          window.location.href = "/";
+        } else {
+          document.getElementById("countdown").textContent =
+            parseInt(document.getElementById("countdown").textContent) - 1;
+        }
+      }, 1000);
+    </script>
+    <style>
+      .logoDavis {
+        text-align: right;
+      }
+      .logoDavis img {
+        width: 180px;
+        height: 70px;
+        margin-right: 10px;
+      }
+    </style>
+  </body>
+</html>

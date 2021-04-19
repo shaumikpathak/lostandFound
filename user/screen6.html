@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>UCD Lost and Found</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/user/reset.css" />
+    <link rel="stylesheet" href="/user/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/user/script.js" defer></script>
+  </head>
+  <body style="background:#b3c1d1">
+    <div class="logoDavis">
+      <img
+        src="https://cdn.glitch.com/9001d8bd-1bd8-4717-821c-3de4bd0ddeab%2FLogo.png?v=1590009732448"
+      />
+    </div>
+    <div class="mainScreen">
+      <p class="titleForm">Input the lost item</p>
+      <div class="screenForm">
+        <div class="formInfo">
+          <form class="formSearchItem">
+            <label for="title" style="color:#365c85">Title</label><br />
+            <input type="text" id="title2" name="title" /><br />
+            <label for="category" style="color:#365c85">Category</label><br />
+            <input
+              list="categories"
+              type="text"
+              id="category2"
+              name="category"
+            />
+            <datalist id="categories">
+              <option value="Laptop"></option>
+              <option value="Cellphone"></option>
+              <option value="Pen"></option>
+              <option value="Charger"></option>
+              <option value="Cable"></option>
+              <option value="Others"></option>
+            </datalist>
+            <br />
+            <label for="description" style="color:#365c85">Description</label
+            ><br />
+            <textarea
+              type="text"
+              id="description2"
+              name="description"
+              class="description"
+            ></textarea>
+            <img id="cardImg" alt="user uploaded img" />
+            <p class="photo" style="color:#365c85">Attach a photo (optional)</p>
+            <!-- <button class="imageBton"  style="color:#365c85">Choose File</button> -->
+            <div class="imgArea">
+              <div class="Imgtxt" style="color:#365c85">Choose File</div>
+              <input type="file" accept="image/*" id="foundImage" />
+            </div>
+            <br /><br><br>
+
+            <a
+              href="https://final-loving-guava.glitch.me/user/screen7.html"
+              class="buttonNext nextBton"
+              id="next2"
+              >Next</a
+            >
+          </form>
+        </div>
+
+        <div class="searchRequest">
+          <p class="question">Or search for existing requests</p>
+          <br />
+          <!--<input type="text" id="search" name="search" class="search"> -->
+          <div
+            id="searchbox"
+            onclick="window.location='https://final-loving-guava.glitch.me/user/screen8.html'"
+          ></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js" defer></script>
+  </body>
+</html>

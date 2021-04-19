@@ -1,0 +1,29 @@
+{
+  "name": "UCD-Lost-and-Found",
+  "version": "0.0.1",
+  "description": "This is a final Project ECS162-Spring 2020",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "passport": "^0.4.1",
+    "passport-google-oauth20": "*",
+    "sqlite3": "^4.2.0",
+    "request": "^2.88.2"
+  },
+  "engines": {
+    "node": "6.9.1"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "google",
+    "oauth",
+    "passport"
+  ]
+}
